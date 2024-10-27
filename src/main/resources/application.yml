@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: Asia/Shanghai
+  mvc:
+    format:
+      date: yyyy-MM-dd
+      date-time: yyyy-MM-dd HH:mm:ss
+
+mybatis-plus:
+  type-aliases-package: com.hengheng.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com.hengheng.dao: debug
